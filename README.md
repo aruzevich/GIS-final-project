@@ -1,0 +1,5 @@
+# GIS-final-project
+
+This project was created for NYU Wagner's Advanced GIS course. It functions as an informational story map to learn more about the national park system in Indonesia, which is the 3rd largest hotspot of biodiversity in the world (after the Amazon and Congo Basin). As one scrolls through the story, the map jumps to 9 different geoJSON polygons that represent parks on most of the major island regions of the country. As part of the visual experience, the story map features many images  pulled from online sources.
+
+The project was created using mapboxGL documentation for fly-to functionality based on which chapter is on-screen. The user is greeted with a splash screen that gives a basic introduction to the content of the story map and a button to launch. Scrolling is disabled in-map so as not to interfere with scrolling in the sidebar. All park boundaries were downloaded from (https://www.protectedplanet.net/en), combined in one layer and converted to geoJSON using QGIS, and simplified using (mapshaper.org).

@@ -97,7 +97,7 @@ map.on('style.load', function() {
     'filter': ["==", "layer", "Kerinci Seblat National Park"],
     'type': 'fill',
     'paint': {
-      'fill-color': '#999999',
+      'fill-color': '#228B22',
       'fill-opacity': 0.5,
     }
   });

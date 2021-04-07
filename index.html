@@ -12,26 +12,41 @@
 
 <body>
 
-    <body onload="openIntro()">
-      <div id="splashScreen" class="overlay">
-        <div class="overlay-content">
-          <h2>Biodiversity in Indonesia</h2>
-          <p>Indonesia is home to some of the highest levels of biodiversity in the world,
-            containing 10% of plant species and 12% of mammal species within only 1% of Earth’s
-            land area.</p>
-          <p>Launch the map to explore 9 different national parks that contribute to Indonesia's
-            ongoing efforts in environmental and wildlife conservation.</p>
-          <p align="center"><a href="javascript:void(0)" onclick="closeIntro()"><button id="overlay-button"><i class="far fa-compass"></i>  Launch</a></button></p>
-        </div>
-      </div>
+<body onload="openIntro()">
+  <div id="splashScreen" class="overlay">
+    <div class="overlay-content">
+      <h2>Biodiversity in Indonesia</h2>
+      <p>Indonesia is home to some of the highest levels of biodiversity in the world,
+        containing 10% of plant species and 12% of mammal species within only 1% of Earth’s
+        land area.</p>
+      <p>Launch the map to explore 9 different national parks that contribute to Indonesia's
+        ongoing efforts in environmental and wildlife conservation.</p>
+      <p align="center"><a href="javascript:void(0)" onclick="closeIntro()"><button id="overlay-button"><i class="far fa-compass"></i>  Launch</a></button></p>
+    </div>
+  </div>
 
-<div id="map"></div>
+<div id="map">
+  <nav id="chapterNav">
+    <button class='flyto-button' id="flyleuser">Mount Leuser</button></br>
+    <button class='flyto-button' id="flykerinci">Kerinci Sablat</button></br>
+    <button class='flyto-button' id="flywaykambas">Way Kambas</button></br>
+    <button class='flyto-button' id="flyujung">Ujung Kulon</button></br>
+    <button class='flyto-button' id="flymeru">Meru Batiri</button></br>
+    <button class='flyto-button' id="flytanjung">Tanjung Puting</button></br>
+    <button class='flyto-button' id="flykomodo">Komodo</button>
+    <button class='flyto-button' id="flylorentz">Lorentz</button></br>
+    <button class='flyto-button' id="flywasur">Wasur</button>
+  </nav>
+</div>
 
 <div id="features">
   <section id="background" class="active">
     <h1><b>Indonesia's National Park System</b></h1></br>
+
+    <i class="fas fa-info-circle"></i><small> Scroll through the sidebar or use the navigation bar on the lower left
+      to jump to national parks on the map.</small></br></br>
+
     <h2><b>Background</b></h2>
-    <i class="fas fa-info-circle"></i><small> Scroll through the sidebar to jump to parks on the map.</small>
     <p>
       <div class="images">
         <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/08/Mount-Batur-KB6592.jpg">
@@ -81,7 +96,7 @@
 
   <section id="kerinci-seblat"></br>
     <h2>Kerinci Seblat</h2>
-    <p>of Indonesia’s lesser-visited parks, Kerinci Seblat in West Sumatra shelters Sumatran
+    <p>Of Indonesia’s lesser-visited parks, Kerinci Seblat in West Sumatra shelters Sumatran
       elephants and tigers, clouded leopards, Malayan sun bears and tapirs, as well as hundreds
       of species of birds, and the world’s largest and tallest flowers. There are no orangutans,
       but occasionally sightings have been reported of the mysterious orang pendek, a bipedal ape
@@ -147,10 +162,9 @@
 
   <section id="meru-batiri"></br>
     <h2>Meru Batiri</h2>
-    <p>The Meru Betiri National Park, covering 580 sq km between Jember and Banyuwangi districts,
-      is an area of magnificent coastal rainforest and abundant wildlife. It’s famous as having been
-      one of the last refuges of the Java tiger, now almost certainly extinct. Meru Betiri is very
-      difficult to access (often impossible in the rainy season), which keeps the number of visitors
+    <p>The Meru Betiri National Park in eastern Java covers 580 sq km of magnificent coastal rainforest and abundant wildlife.
+      It’s famous as having been one of the last refuges of the Javan tiger, now almost certainly extinct.
+      Meru Betiri is very difficult to access (often impossible in the rainy season), which keeps the number of visitors
       to a trickle, but the park authorities are actively trying to promote tourism.</p>
     <p>At Meru Betiri, one can find rare plants such as the Raflesia Zollingeriona flower,
       Balanphora Fungosa, mangrove forest, api-api, waru, nyamplung, rengas, and several types of medicinal
@@ -172,7 +186,7 @@
     <p>Sunrise along the river offers the best opportunity for seeing proboscis monkeys, birds, mudskippers, archerfish, and pythons.</p>
     <p>
       <div class="images">
-        <img src="https://www.travelanddestinations.com/wp-content/uploads/2020/01/Male-orangutan-Tanjung-Puting-National-Park-Borneo.jpg"></br></br>
+        <img src="https://www.travelanddestinations.com/wp-content/uploads/2020/01/Male-orangutan-Tanjung-Puting-National-Park-Borneo.jpg">
         <small><em>(Image source: travelanddestinations.com)</em></small>
       </div>
     </p>
@@ -180,8 +194,11 @@
 
   <section id="komodo"></br>
     <h2>Komodo</h2>
-    <p>A UNESCO World Heritage Site, Komodo National Park lies in the strait between Sumbawa and Flores and is the natural habitat of the world’s largest reptile, the Komodo dragon. This giant carnivorous monitor lizard is one of the world’s oldest species, and a close relative of the dinosaurs that roamed the earth 100 million years ago.
-      Komodo National Park receives very little rainfall, which results in an arid landscape you won’t find elsewhere in Indonesia.
+    <p>A UNESCO World Heritage Site, Komodo National Park lies in the strait between Sumbawa and Flores in the Lesser Sunda Islands.
+      It is the best known for being the natural habitat of the world’s largest reptile, the Komodo dragon. This giant carnivorous monitor lizard is
+      one of the world’s oldest species, and a close relative of the dinosaurs that roamed the earth 100 million years ago.
+      Komodo National Park receives very little rainfall, which results in an arid landscape you won’t find elsewhere in
+      Indonesia.
     </p>
     <p>
       <div class="images">
@@ -197,14 +214,14 @@
 
   <section id="lorentz"></br>
     <h2>Lorentz</h2>
-    <p>Lorentz National Park is a UNESCO World Heritage Site and at 2.5 million hectares
-      (6.2 million acres), the largest protected area in Southeast Asia. The park is one of
+    <p>Lorentz National Park is a UNESCO World Heritage Site in Papua province. At 2.5 million ha
+      (6.2 million acres), it is the largest protected area in Southeast Asia. The park is one of
       the most ecologically diverse in the world, its vast expanses encompassing tropical marine
       environments and lowland wetlands, as well as Indonesia’s highest mountain, Puncak Jaya,
       which reaches 4,884 metres (16,024ft) and is capped by permanent ice fields. The mountain
       is the tallest peak between the Himalayas and the Andes, and one of only three equatorial
       glaciers on the planet.
-    <p>The extraordinary biodiversity of the park supports numerous rare animals, such as the
+    <p>The extraordinary biodiversity of the park supports numerous rare animals such as
       crowned pigeons and birds of paradise. It is also home to a number of isolated tribes,
       including the Amungme, Western Dani, Nduga, Ngalik, Asmat, Mimika and Somohai.</p>
     <p>
@@ -217,9 +234,9 @@
   <section id="wasur"></br>
     <h2>Wasur</h2>
     <p>The wetlands situated within the Wasur National Park are the least disturbed in Indonesia.
-      Located in the Papua province, the park is a vast open and incredibly bio-diverse ecosystem.
-      It is so rich with wildlife and biodiversity that it is often referred to as the ‘Serengeti
-      of Papua’. The official name of the park – Wasur – is derived from the Maori word ‘waisol’,
+      Located in the Papua province, the park is a vast and incredibly biodiverse ecosystem.
+      It is so rich with wildlife and vegetation that it is often referred to as the ‘Serengeti
+      of Papua’. The official name of the park – Wasur – is derived from the Maori word <em>waisol</em>,
       which means garden. Within the park, the Rawa Biru Lake hosts the largest range of plant and
       animal species.</P>
     <p>
@@ -272,12 +289,14 @@
       <small><em>Source: International Network for Natural Sciences</em></small></br>
       </div>
     </p></br>
-    <p><i class="fas fa-info-circle"></i><small> For more information, visit:</p>
-    <p><a href="https://www.menlhk.go.id">Indonesian Ministry of Environment & Forestry</a></p>
-    <p><a href="https://www.indonesia.travel/gb/en/home">Indonesian Ministory of Tourism</a></p>
-    <p><a href="https://www.greenpeace.org/indonesia/">Greenpeace Indonesia</a></p>
-    <p><a href="https://wri-indonesia.org/en/about">WRI Indonesia</a></p>
-    <p><a href="https://www.walhi.or.id">WALHI</a></p>
+    <p><i class="fas fa-info-circle"></i><small> For more information about Indonesia's national parks, visit:</p>
+    <ul>
+      <li><a href="https://www.menlhk.go.id">Indonesian Ministry of Environment & Forestry</li>
+      <li><a href="https://www.indonesia.travel/gb/en/home">Indonesian Ministory of Tourism</li>
+      <li><a href="https://www.greenpeace.org/indonesia/">Greenpeace Indonesia</li>
+      <li><a href="https://wri-indonesia.org/en/about">WRI Indonesia</li>
+      <li><a href="https://www.walhi.or.id">WALHI</li>
+    </ul>
   </section>
 
 </div>

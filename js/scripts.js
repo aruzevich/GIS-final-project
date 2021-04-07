@@ -238,3 +238,86 @@ function isElementOnScreen(id) {
     var bounds = element.getBoundingClientRect();
     return bounds.top < window.innerHeight && bounds.bottom > 0;
 }
+
+
+// Fly to park boundaries from navigation bar //
+$('#flyleuser').on('click', function() {
+  map.flyTo({
+    center: [98.429260,3.677782],
+    zoom: 8,
+    bearing: -20,
+    pitch: 0,
+    essential: true,
+  });
+})
+
+$('#flykerinci').on('click', function() {
+  map.flyTo({
+    center: [102.604065,-2.320227],
+    zoom: 7.5,
+    bearing: 0,
+    pitch: 0  });
+})
+
+$('#flywaykambas').on('click', function() {
+  map.flyTo({
+    center: [105.988666, -4.835102],
+    zoom: 9.5,
+    bearing: -50,
+    pitch: 20
+  });
+})
+
+$('#flyujung').on('click', function() {
+  map.flyTo({
+    center: [105.703583, -6.510450],
+    zoom: 9,
+    bearing: 0,
+    pitch: 10
+  });
+})
+
+$('#flymeru').on('click', function() {
+  map.flyTo({
+    center: [113.956375, -8.498519],
+    zoom: 10,
+    bearing: 15,
+    pitch: 10  });
+})
+
+$('#flytanjung').on('click', function() {
+  map.flyTo({
+    center: [112.471411,-2.861270],
+    zoom: 8.5,
+    bearing: -20,
+    pitch: 0
+  });
+})
+
+$('#flykomodo').on('click', function() {
+  map.flyTo({
+    center: [119.820328,-8.651966],
+    zoom: 9.5,
+    pitch: 20,
+    bearing: 0,
+    pitch: 0
+  });
+})
+
+$('#flylorentz').on('click', function() {
+  map.flyTo({
+    center: [138.622742,-4.908992],
+    zoom: 7.5,
+    bearing: 30,
+    pitch: 0
+  });
+})
+
+$('#flywasur').on('click', function() {
+  map.flyTo({
+    center: [141.212769,-8.967433],
+    zoom: 8.5,
+    bearing: 45,
+    pitch: 10
+  });
+})

@@ -32,7 +32,7 @@
   background: rgba(0, 0, 0, 0.85);
   color: #d5d5d5;
   font-size: 1.1vw;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   line-height: 1.8vw;
   border: 4px solid rgba(0, 0, 0, 0.7);
 }
@@ -58,7 +58,7 @@
   padding: 10px;
   font-size: 1.5vw;
   border: 4px solid rgba(0, 0, 0, 0.9);
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
 }
 
 @media screen and (max-height: 450px) {
@@ -97,7 +97,7 @@ body {
   padding: 20px;
   box-sizing: border-box;
   font-size: 1.2vw;
-  font-family: 'Roboto', sans-serif;
+  font-family: sans-serif;
   line-height: 1.8vw;
   z-index: 2;
 }
@@ -105,7 +105,7 @@ body {
 section {
   padding: 10px 25px;
   border-bottom: 1px solid #ddd;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 section.active {
@@ -120,21 +120,68 @@ section:last-child {
 h1 {
   font-size: 3.6vw;
   line-height: 4.1vw;
-  font-family: 'Inter Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 h2 {
   font-size: 2.1vw;
   line-height: 2.2vw;
-  font-family: 'Inter Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 h3 {
   font-size: 1.2vw;
   line-height: 1.3vw;
-  font-family: 'Inter Bold', sans-serif;
+  font-family: sans-serif;
 }
 
 img {
   max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #00ffff;
+}
+
+/* Chapter navigation bar from C Neidson */
+#chapterNav {
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  width: 20px;
+  z-index: 1;
+}
+
+.flyto-button {
+  background: #1f2020;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 2px;
+  font-size: 14px;
+  width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  font-family: sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+
+button:active {
+  cursor: pointer;
+  border-color: #ffd700;
 }

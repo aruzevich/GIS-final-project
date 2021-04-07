@@ -3,111 +3,277 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Indonesia Biodiversity</title>
+  <title>Biodiversity in Indonesia</title>
   <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
   <link href='css/styles.css' rel='stylesheet' />
+  <script src="https://kit.fontawesome.com/b3eac4dc41.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
+    <body onload="openIntro()">
+      <div id="splashScreen" class="overlay">
+        <div class="overlay-content">
+          <h2>Biodiversity in Indonesia</h2>
+          <p>Indonesia is home to some of the highest levels of biodiversity in the world,
+            containing 10% of plant species and 12% of mammal species within only 1% of Earth’s
+            land area.</p>
+          <p>Launch the map to explore 9 different national parks that contribute to Indonesia's
+            ongoing efforts in environmental and wildlife conservation.</p>
+          <p align="center"><a href="javascript:void(0)" onclick="closeIntro()"><button id="overlay-button"><i class="far fa-compass"></i>  Launch</a></button></p>
+        </div>
+      </div>
+
 <div id="map"></div>
+
 <div id="features">
-  <section id="intro" class="active">
-    <h1><b>Indonesia's Biodiversity Under Threat</b></h1>
-    <p>This is some text. This is the <a href='https://globalinitiative.net'>GITOC</a> website.
-    </p>
-      <div style="display:inline-block" width="90%">
-        <img src="./images/badge01.png" style="max-width:53px"><img src="./images/badge02.png" style="max-width:53px">
-        <img src="./images/badge03.png" style="max-width:53px"><img src="./images/badge04.png" style="max-width:53px">
-        <img src="./images/badge05.png" style="max-width:53px"><img src="./images/badge06.png" style="max-width:53px"></div>
-    </p>
-    <p>ipsum lorem ipsum</p>
-    <p><i class="fas fa-info-circle"></i><small> Use this as a call to action.</small></p>
-  </section>
-
-  <section id="rockaways">
-    <h2>Subtitle1</h2>
-    <p>lorem ipsum</p>
+  <section id="background" class="active">
+    <h1><b>Indonesia's National Park System</b></h1></br>
+    <h2><b>Background</b></h2>
+    <i class="fas fa-info-circle"></i><small> Scroll through the sidebar to jump to parks on the map.</small>
     <p>
-      <div class="credit">
-        <img src="./images/01.jpg"></br></br>
-        <img src="./images/02.jpg"></br></br>
-        <img src="./images/03.jpg"></br>
-        <i>(Images credits: )</i></div>
-    </p>
-  </section>
-
-  <section id="smias">
-    <h2>Subtitle2</h2>
-    <p>lorem ipsum</p>
-    <p>more stuff</p>
-    <p>
-      <div class="credit"><img src="./images/smia.jpg"><br><i>(Image credit:)</i></div>
-    </p>
-    <p>blah blah blah</p>
-    <p>Next, we'll explore some of the unique vulnerabilities of these areas,
-      based on research from <a href="https://nycejalliance.tumblr.com/post/132225273641/the-six-significant-maritime-and-industrial-areas" target="_blank">New York City
-        Environmental Justice Alliance</a>.</p>
-    <p>
-      <div class="credit"><img src="./images/newtown.jpg"></br>
-        <i>(Images credits: )</i></div>
+      <div class="images">
+        <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/08/Mount-Batur-KB6592.jpg">
+        <small><em>Source: Travel Triangle</em></small></br>
+        <p>Indonesia is home to some of the world’s oldest and richest natural habitats, which support a fabulous
+          variety of fauna and flora that include many species found nowhere else on earth.</p></br>
+        <img src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2018/08/Raja-Ampat-Islands-KB6592-e1535543078560.jpg">
+        <small><em>Source: Travel Triangle</em></small></br>
+        <p>The archipelago's thousands of islands encompass 92 million ha of tropical rainforest, as well as
+          large areas of pristine mangrove forest and swamp, montane forests and savannah, and thousands of
+          miles of coastline and coral reefs.</p></br>
+        <img src="https://d3hne3c382ip58.cloudfront.net/files/uploads/bookmundi/resized/cmsfeatured/best-indonesian-islands-1524629024-785X440.jpg">
+        <small><em>Source: Travel Triangle</em></small></br>
+        <p>Dotting these diverse environments are the country's 54 national
+          parks––treasure troves of iconic wildlife such as the Komodo dragon, Javan rhino, orangutan, Sumatran
+          elephant, and Sumatran tiger.</p>
+        <img src="https://images.squarespace-cdn.com/content/v1/53edc2b0e4b0472dbe760c43/1587404155361-1MTHHPXBPWMXWBAJST2D/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/Marine+biodiversity+in+Indonesia">
+        <small><em>Source: Blue Corner Marine Research</em></small></br></br>
+      </div>
     </p>
   </section>
 
-  <section id="newtown">
-    <h2>Subtitle3</h2>
-    <p>lorem ipsum</p>
+  <section id="mount-leuser"></br>
+    <h2>Mount Leuser</h2>
+    <p>Gunung Leuser National Park is one of the richest tropical rainforests in Southeast Asia.
+      Covering up to 7927 km2 and straddling the border of North Sumatra and Aceh provinces, it
+      is one of the last places on earth with critically endangered orangutans living in the wild.
+      This region is also the habitat of other wildlife: Elephants, rhinos, tigers, siamangs, Thomas
+      leaf monkeys, macaques and gibbons are just a handful of the thousands of species found in
+      this unique eco-system. Together with Bukit Barisan Selatan and Kerinci Seblat National Parks,
+      Gunung Leuser National Park is an UNESCO World Heritage Site (listed 2004), a Tropical Rainforest
+      Heritage of Sumatra.</p>
     <p>
-      <div class="credit"><img src="./images/oilspill.jpg"><br /><i>(Image credit: )</i></div>
+      <div class="images">
+        <img src="https://indonesiaexpat.id/wp-content/uploads/2019/07/DSC_9699-e1563261669594.jpg">
+        <small><em>Source: IndonesiaExpat.id</em></small></br>
+      </div>
+    </p>
+    <p>The park area peaks at 3,404 m with the summit of Gunung Leuser which gave the area its name. Its wide range of eco-systems contains rivers, volcanoes and lakes. This rainforest is immensely biodiverse, hosting approximately 750 different species of animals – more than 200 mammals, 380 birds, 190 reptiles and amphibians. Because of the great differences in altitude and the diversity in soil, the Gunung Leuser National Park also has an enormous wealth of plant species. 45% of all recorded plant species in the West Indo-Malayan region are found in this area.</p>
+    <p>
+      <div class="images">
+        <img src="https://authentic-indonesia.com/wp-content/uploads/2018/05/sumatran-tiger-e1543477629200.jpg">
+        <small><em>Source: AuthenticIndonesia.com</em></small></br>
+      </div>
     </p>
   </section>
 
-  <section id="bronx">
-    <h2>Subtitle</h2>
-    <p>lorem ipsum</p>
+  <section id="kerinci-seblat"></br>
+    <h2>Kerinci Seblat</h2>
+    <p>of Indonesia’s lesser-visited parks, Kerinci Seblat in West Sumatra shelters Sumatran
+      elephants and tigers, clouded leopards, Malayan sun bears and tapirs, as well as hundreds
+      of species of birds, and the world’s largest and tallest flowers. There are no orangutans,
+      but occasionally sightings have been reported of the mysterious orang pendek, a bipedal ape
+      similar to an orangutan, and the mythical sigau, half-lion and half-tiger.</p>
     <p>
-      <div class="credit"><img src="./images/portmorris.jpg"></br>
-        <i>(Image credit: )</i></div>
+      <div class="images">
+        <img src="https://dbijapkm3o6fj.cloudfront.net/resources/5783,1004,1,6,4,0,600,450/-4601-/20160317225649/kerinci-seblat-national-park.jpeg">
+        <small><em>Source: SwissBelHotel.com</em></small></br>
+      </div>
     </p>
-    <p>blah blah blah</p>
+    <p>The park is one of Indonesia’s largest reserves, covering an incredible 14,000 sq km (5,400 sq miles)
+      of jungle and mountains. It is home to the highest peak in West Sumatra, Gunung Kerinci. The second
+      highest volcano in Indonesia, Kerinci attracts climbers who are up for a serious challenge.
+      Conservation groups here have trained local guides to take the adventurous on treks through the
+      forest and climbing expeditions.</p>
     <p>
-      lorem ipsum on repeat
+      <div class="images">
+        <img src="https://vacationspotindonesia.files.wordpress.com/2015/04/kerinci-seblat-national-park-2.jpg">
+        <small><em>Source: VacationSpotIndonesia.com</em></small></br>
+      </div>
     </p>
   </section>
 
-  <section id="sunset">
-    <h2>Some Title</h2>
-    <p>ipsum lorem</P>
-    <P>text text text.
+  <section id="way-kambas"></br>
+    <h2>Way Kambas</h2>
+    <p>In South Sumatra, on the island's southwest coast, Way Kambas is a sanctuary for Sumatran
+      elephants and rhinos, assuring visitors of the chance to spot them. The park comprises estuaries,
+      marshes and open grassland and is the home of the Sumatran Rhino Sanctuary, which plays an
+      important part in the ongoing efforts to save the Sumatran rhino from extinction. </p>
+      <p>Here, it is possible to spot wild elephants, boars, and tigers that come to the river’s edge to drink. Birdwatching is
+        also excellent, with resident kingfishers, lesser adjutants, woolly-necked storks and pelicans.
+        The park also houses an Elephant Conservation Centre, in which the endangered mammals are bred and
+        trained to patrol park boundaries.</p>
+    <p>
+      <div class="images">
+        <img src="https://d1bv4heaa2n05k.cloudfront.net/posts%2FkrBuauAdN7ETusyfo%2F1534257380671-shutterstock_1127475161.jpg">
+        <small><em>Source: Insight Guides</em></small></br>
+      </div>
+    </p>
+  </section>
+
+  <section id="ujung-kulon"></br>
+    <h2>Ujung Kulon</h2>
+    <p>A UNESCO Natural Heritage Site, Ujung Kulon National Park is located south of Carita on the
+      southwest tip of Java. A 420 sq km (260 sq mile) reserve, it supports the gravely endangered and
+      rarely sighted Javan one-horned rhino – of which fewer than 70 remain – and numerous other forest
+      species. The area includes Java’s largest lowland rainforests, home to hornbills, deer, wild boar,
+      black panthers and green turtles. Other wildlife resident in the park includes leopards, macaques,
+      leaf monkeys, crocodiles and indigenous wild oxen (banteng).</p>
+    <p>While much of the area is dense lowland rainforest, there are also open woodlands and wetlands –
+      excellent habitats for birdwatching – with beaches in the north and south. Thousands of migratory birds flock in
+      to the nearby islands of Pulau Dua and Pamojan Besar between April and August. Offshore, Krakatau Island
+      also makes up part of the park.</p>
       <p>
-        <div class="credit"><img src="./images/sunset.jpg"></br>
-          <i>(Image credit: )</i></div>
+        <div class="images">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Ujung_Kulon_National_Park%2C_2014.jpg">
+          <small><em>Source: Wikipedia</em></small></br>
+          <img src="https://www.weadapt.org/sites/weadapt.org/files/2017/november/4f43a0ceec765javan-rhino-camera-trap-clearing-32632-600x450.jpg">
+          <small><em>Source: WeADAPT</em></small></br>
+        </div>
       </p>
   </section>
 
-  <section id="redhook">
-    <h2>Some Title</h2>
-    <p>lorem ipsum</P>
-    <p>blah blah blah</p>
-    <div class="credit">
-      <img src="./images/redhook01.jpg"></br></br>
-      <img src="./images/redhook2.jpg"></br></br>
-      <img src="./images/gowanus.jpg"></br>
-      <i>(Images credits: )</i></div>
+  <section id="meru-batiri"></br>
+    <h2>Meru Batiri</h2>
+    <p>The Meru Betiri National Park, covering 580 sq km between Jember and Banyuwangi districts,
+      is an area of magnificent coastal rainforest and abundant wildlife. It’s famous as having been
+      one of the last refuges of the Java tiger, now almost certainly extinct. Meru Betiri is very
+      difficult to access (often impossible in the rainy season), which keeps the number of visitors
+      to a trickle, but the park authorities are actively trying to promote tourism.</p>
+    <p>At Meru Betiri, one can find rare plants such as the Raflesia Zollingeriona flower,
+      Balanphora Fungosa, mangrove forest, api-api, waru, nyamplung, rengas, and several types of medicinal
+      plants. There are also long-tailed macaques, ajag, lekang, and turtles that lay their eggs on the beach.</p>
+      <p>
+        <div class="images">
+          <img src="https://authentic-indonesia.com/wp-content/uploads/2021/01/The-Location-of-Meru-Betiri-National-Park-1536x960.jpg">
+          <small><em>Source: travelspromo.com</em></small></br>
+        </div>
+      </p>
   </section>
 
-  <section id="conclusion">
-    <h2>How can prevent further degredation?</h2>
-    <p>We can start by....
-    </P>
+  <section id="tanjung-puting"></br>
+    <h2>Tanjung Puting</h2>
+    <p>The island of Borneo is a remarkable island in general for its century-old cloud forests.
+      The 4150 sq km forested expanses of Tanjung Puting National Park in Central Kalimantan are known for
+      the abundant wildlife they support, especially orangutans. In addition, with its swamps, mangroves, rivers, and
+      rainforests, there’s plenty to discover in this large park.</P>
+    <p>Sunrise along the river offers the best opportunity for seeing proboscis monkeys, birds, mudskippers, archerfish, and pythons.</p>
     <p>
-      <div class="credit"><img src="./images/sandy.jpg"></br>
-        <i>(Images credit: )</i></div>
+      <div class="images">
+        <img src="https://www.travelanddestinations.com/wp-content/uploads/2020/01/Male-orangutan-Tanjung-Puting-National-Park-Borneo.jpg"></br></br>
+        <small><em>(Image source: travelanddestinations.com)</em></small>
+      </div>
     </p>
-    <p>Here's some text.</a>.</p>
-    <p><i class="fas fa-info-circle"></i><small> Here's a call to action.</small> </p>
   </section>
+
+  <section id="komodo"></br>
+    <h2>Komodo</h2>
+    <p>A UNESCO World Heritage Site, Komodo National Park lies in the strait between Sumbawa and Flores and is the natural habitat of the world’s largest reptile, the Komodo dragon. This giant carnivorous monitor lizard is one of the world’s oldest species, and a close relative of the dinosaurs that roamed the earth 100 million years ago.
+      Komodo National Park receives very little rainfall, which results in an arid landscape you won’t find elsewhere in Indonesia.
+    </p>
+    <p>
+      <div class="images">
+        <img src="https://www.travelanddestinations.com/wp-content/uploads/2019/11/Kawah-Ijen-volcano-and-lake.jpg">
+        <small><em>Source: travelanddestinations.com</em></small></br></br>
+        <img src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1569496010334/article-header01_main_1569496036458.jpeg">
+        <small><em>Source: Rafal Cichawa/Shutterstock</em></small></br></br>
+        <img src="https://d1bv4heaa2n05k.cloudfront.net/posts%2FkrBuauAdN7ETusyfo%2F1569496350008-komodo+drag01.jpg">
+        <small><em>Image source: Gudkov Audrey/Shutterstock</em></small></br></br>
+      </div>
+    </p>
+  </section>
+
+  <section id="lorentz"></br>
+    <h2>Lorentz</h2>
+    <p>Lorentz National Park is a UNESCO World Heritage Site and at 2.5 million hectares
+      (6.2 million acres), the largest protected area in Southeast Asia. The park is one of
+      the most ecologically diverse in the world, its vast expanses encompassing tropical marine
+      environments and lowland wetlands, as well as Indonesia’s highest mountain, Puncak Jaya,
+      which reaches 4,884 metres (16,024ft) and is capped by permanent ice fields. The mountain
+      is the tallest peak between the Himalayas and the Andes, and one of only three equatorial
+      glaciers on the planet.
+    <p>The extraordinary biodiversity of the park supports numerous rare animals, such as the
+      crowned pigeons and birds of paradise. It is also home to a number of isolated tribes,
+      including the Amungme, Western Dani, Nduga, Ngalik, Asmat, Mimika and Somohai.</p>
+    <p>
+    <div class="images">
+      <img src="https://2.bp.blogspot.com/-iv1xXodg72A/XKLZFhWQhsI/AAAAAAAABaA/mtdta9QsqY89YhSxlHuQFb4UkZOCqH4gQCLcBGAs/w1200-h630-p-k-no-nu/The%2BBeauty%2Bof%2BPapua%2BWith%2BLorentz%2BNational%2BPark.png"></br></br>
+      <small><em>(Image source: IamIndonesia.net)</em></small>
+    </div>
+  </section>
+
+  <section id="wasur"></br>
+    <h2>Wasur</h2>
+    <p>The wetlands situated within the Wasur National Park are the least disturbed in Indonesia.
+      Located in the Papua province, the park is a vast open and incredibly bio-diverse ecosystem.
+      It is so rich with wildlife and biodiversity that it is often referred to as the ‘Serengeti
+      of Papua’. The official name of the park – Wasur – is derived from the Maori word ‘waisol’,
+      which means garden. Within the park, the Rawa Biru Lake hosts the largest range of plant and
+      animal species.</P>
+    <p>
+      <div class="images">
+        <img src="https://www.savingwetlands.com/wp-content/uploads/2017/03/wasur-national-park-featured.jpg">
+        <small><em>Source: Saving Wetlands</em></small></br>
+      </div>
+    </p>
+    <p>Roughly 70% of the park is made up of savanna territories – open canopy plains that consist
+      of a mixture of grasslands and woods. The remaining 30% are grassy plains, monsoon forests,
+      swamp forests, coastal forests and bamboo forests. Most of the plants found in the Wasur National
+      Park are mangroves, which provide a vital habitat for a large variety of birds and fish.
+      Wildlife include the southern cassowary, wallaby, blue crowned pigeon, several species of bird of
+      paradise, saltwater crocodiles, and the New Guinea crocodile. Rare species that are endemic to
+      the area include the southern crowned pigeon, dusky pademelon, New Guinea harpy eagle, black-necked
+      stork, little curlew and Fly River grassbird.</p>
+    <p>
+      <div class="images">
+        <img src="https://www.indonesia-tourism.com/papua/images/wasur.jpg">
+        <small><em>Source: IndonesiaTourism.com</em></small></br>
+      </div>
+    </p>
+  </section>
+
+  <section id="conclusion"></br>
+    <h2>Threats to Biodiversity</h2>
+    <p>Notwithstanding the numerous parks and other conservation areas, many of Indonesia's
+      most treasured species are classified as endangered or critically endangered. Despite
+      legal environmental protections, the threat of extinction looms large over much of the
+      country's flora and fauna due to rapid industrialization and human population growth.
+      Factors such as illegal deforestation, agricultural expansion, industrial pollution,
+      illegal wildlife poaching, and natural hazards due to climate change all contribute to the dwindling
+      populations of rare animal species.</p></br>
+    <p>
+      <div class="images">
+        <img src="https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xNzYwNjAwNi9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY2NzE2MDE3Nn0._hGcVeNjtk1vekNfw5TC7Jf3_dybNLxN4FeJLgMaNdQ/img.jpg?width=1245&quality=85&coordinates=66%2C0%2C67%2C0&height=700">
+        <small><em>Source: EcoWatch</em></small></br></br>
+        <img src="https://static01.nyt.com/images/2019/10/11/climate/11CLI-INDONESIAFIRES1/11CLI-INDONESIAFIRES1-superJumbo.jpg">
+        <small><em>Source: Wahyudi/Agence France-Presse</em></small></br></br>
+        <img src="https://i.guim.co.uk/img/media/e34b9cf12c267808b6d50d6ea41ee6c435824a74/191_0_3735_2242/master/3735.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=0360fa1937a9b1a14187d903ac7c616b">
+        <small><em>Source: Yudhi Mahendra/Mighty</em></small></br></br>
+      </div>
+    </p>
+    <p>The impacts of losing Indonesia's––and indeed, the world's––biodiversity are inestimable. Beyond the designation of national parks and other
+      conservation areas, it is crucial for Indonesia to implement stronger regulations, monitoring mechanisms, and rule of law around natural resource management and development
+      to avoid the slow degredation of its natural wonders.</p></br>
+    <p>
+      <div class="images">
+      <img src="https://innspubnet.files.wordpress.com/2019/05/jbes-biodiversity-552019.png?w=714">
+      <small><em>Source: International Network for Natural Sciences</em></small></br>
+      </div>
+    </p>
+  </section>
+
 </div>
 
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
@@ -116,64 +282,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Overlay -->
-  <!-- <body onload="openIntro()">
-    <div id="splashScreen" class="overlay">
-      <div class="overlay-content">
-        <h1>Overlay Title</h1>
-        <p>This is an overlay. </p>
-        <p align="center"><a href="javascript:void(0)" onclick="closeIntro()"><button id="overlay-button">Launch</a></button></p>
-      </div>
-    </div> -->
-
-    <!-- <div id='legend'>
-      <h4>Classification</h4>
-      <div><span style="background-color: purple"></span>Habitat</div>
-      <div><span style="background-color: orange"></span>Poaching</div>
-      <div><span style="background-color: green"></span>Protected area</div>
-    </div> -->
-
-      <!-- <nav class="navParks">
-        <button class='flyto-button' id="flybrooklyn">Brooklyn Navy Yard</button></br>
-        <button class='flyto-button' id="flykill">Kill Van Kull</button></br>
-        <button class='flyto-button' id="flynewtown">Newtown Creek</button></br>
-        <button class='flyto-button' id="flyredhook">Red Hook Container Terminal</button></br>
-        <button class='flyto-button' id="flybronx">South Bronx</button></br>
-        <button class='flyto-button' id="flysi">Staten Island West Shore</button></br>
-        <button class='flyto-button' id="flysunset">Sunset Park</button>
-      </div> -->
-
-  <!-- <div id="map"></div>
-    <div id="container">
-      <div id="features">
-
-
-      </div>
-    </div> -->
-
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script> -->
-
-<!-- copied scripts from Floods -->
-  <!-- <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script> -->
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-  <!-- <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script> -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script> -->
-<!--
-</body>
-</html> -->

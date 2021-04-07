@@ -1,75 +1,5 @@
-/* Map and features from MapboxGL fly-to documentation */
-
-body {
-  margin: 0;
-  padding: 0;
-  color: #f8f9fa;
-  overflow: auto;
-}
-
-#map {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-#features {
-  background: rgba(18, 18, 18, 0.85);
-  position: absolute;
-  color: #d5d5d5;
-  width: 40%;
-  top: 0px;
-  right: 10px;
-  bottom: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-  font-size: 1.1vw;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.8vw;
-  overflow-y: scroll;
-  z-index: 2;
-}
-
-section {
-  padding: 10px 25px;
-  border-bottom: 1px solid #ddd;
-  opacity: 0.25;
-}
-
-section.active {
-    opacity: 1;
-}
-
-section:last-child {
-    border-bottom: none;
-    margin-bottom: 200px;
-}
-
-h1 {
-  font-size: 3.6vw;
-  line-height: 4.1vw;
-  font-family: 'Inter Bold', sans-serif;
-}
-
-h2 {
-  font-size: 2.1vw;
-  line-height: 2.2vw;
-  font-family: 'Inter Bold', sans-serif;
-}
-
-h3 {
-  font-size: 1.2vw;
-  line-height: 1.3vw;
-  font-family: 'Inter Bold', sans-serif;
-}
-
-img {
-  max-width: 75%;
-}
-
-/* Overlay from Flood & Storm Risk by C Neidson */
-/* .overlay {
+/* Overlay from Flood & Storm Risk project by C Neidson */
+.overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -141,114 +71,70 @@ img {
     top: 15px;
     right: 35px;
   }
-} */
-
-
-
-/* legend from Shelter project */
-/* #legend {
-  background-color: #fff;
-  border-radius: 3px;
-  top: 10px;
-  left: 60px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  font-size: 14px;
-  padding: 15px;
-  position: absolute;
-  z-index: 1;
 }
 
-#legend h4 {
-  margin: 0 0 10px;
-}
-
-#legend div span {
-  border-radius: 50%;
-  display: inline-block;
-  height: 10px;
-  margin-right: 5px;
-  width: 10px;
-} */
-
-/* legend from Flood project
- .legend {
-  background-color: #000;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  padding-left: 10px;
-  padding-top: 1px;
-  padding-bottom: 6px;
-  padding-right: 10px;
-}
-
-.legend div span {
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-} */
-
-
-
-/*
-.flyto-button {
-  background: #1f2020;
-  border-radius: 3px;
-  color: #ffffff;
-  padding: 3px;
-  font-size: 14px;
-  width: 160px;
-  border: 1px solid rgba(0, 0, 0, 0.9);
-  font-family: 'Open Sans', sans-serif;
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: #000000;
-}
-
-button:active {
-  cursor: pointer;
-  background-color: #000000;
-} */
-
-/* Zone toggles */
-/* #menu {
-  background: #000000;
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  right: 10px;
-  border-radius: 3px;
-  width: 70px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
-  font-family: 'Open Sans', sans-serif;
-}
-
-#menu a {
-  font-size: 12px;
-  color: #000000;
-  display: block;
+/* Map and features from MapboxGL fly-to documentation */
+body {
   margin: 0;
   padding: 0;
-  padding: 8px;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  text-align: center;
+  color: #f8f9fa;
+  overflow: auto;
 }
 
-#menu a:last-child {
-  border: none;
+#map {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
-#menu a:hover {
-  background-color: #4d4544;
-  color: #ffffff;
+#features {
+  background: rgba(18, 18, 18, 0.85);
+  position: absolute;
+  color: #d5d5d5;
+  width: 40%;
+  right: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 1.2vw;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.8vw;
+  z-index: 2;
 }
 
-#menu a.active {
-  background-color: #1f2020;
-  color: #ffffff;
+section {
+  padding: 10px 25px;
+  border-bottom: 1px solid #ddd;
+  opacity: 0.2;
 }
 
-#menu a.active:hover {
-  background: #000000;
-} */
+section.active {
+    opacity: 1;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+}
+
+h1 {
+  font-size: 3.6vw;
+  line-height: 4.1vw;
+  font-family: 'Inter Bold', sans-serif;
+}
+
+h2 {
+  font-size: 2.1vw;
+  line-height: 2.2vw;
+  font-family: 'Inter Bold', sans-serif;
+}
+
+h3 {
+  font-size: 1.2vw;
+  line-height: 1.3vw;
+  font-family: 'Inter Bold', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
